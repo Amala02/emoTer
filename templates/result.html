@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <div class="results">
+        
+
+		
+        {% if prediction == %}
+        <h2 style="color:red;">Anger</h2>
+        {% elif prediction == 1%}
+        <h2 style="color:blue;">Fear</h2>
+        {% elif prediction == 2%}
+        <h2 style="color:blue;">Joy</h2>
+        {% elif prediction == 3%}
+        <h2 style="color:blue;">Love</h2>
+        {% elif prediction == 4%}
+        <h2 style="color:blue;">Sadness</h2>
+        {% elif prediction == 5%}
+        <h2 style="color:blue;">Surprise</h2>
+        {% endif %}
+    </div>
+    
+</body>
+</html>
