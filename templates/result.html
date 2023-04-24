@@ -11,18 +11,28 @@
         
 
 		
-        {% if prediction == %}
-        <h2 style="color:red;">Anger</h2>
-        {% elif prediction == 1%}
-        <h2 style="color:blue;">Fear</h2>
-        {% elif prediction == 2%}
-        <h2 style="color:blue;">Joy</h2>
-        {% elif prediction == 3%}
-        <h2 style="color:blue;">Love</h2>
-        {% elif prediction == 4%}
-        <h2 style="color:blue;">Sadness</h2>
-        {% elif prediction == 5%}
-        <h2 style="color:blue;">Surprise</h2>
+        {% if prediction =="calm" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX50QitC6Oqtn?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+        {% elif prediction == "sad but angry" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/74uGT3GHDg0fsDoiZuHGZu?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        {% elif prediction == "calm songs"  %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6f9nZmbYGY8jnoR5QTrSz4?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        {% elif prediction == "happy love" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIgnXj6uD4zub?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        {% elif prediction == "heartbreak" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbrUpGvoi3TS?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        {% elif prediction == "chill" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        {% elif prediction=="random" %}
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
         {% endif %}
     </div>
     
