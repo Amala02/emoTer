@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+	<script src="index.js"></script>
 <body>
     <h1>
        EmoTer
     </h1>
+
+	<div id="emoter-working" style="display: none">
     <form action="{{ url_for('predict')}}" method="POST">
 		<p>Enter Your Text Here</p>
 		<textarea name="message" rows="6" cols="50"></textarea>
@@ -24,16 +26,9 @@
 		
 	</form>
 
-	<script>
-		function signup(){
-			document.getElementById('signup').style.display = "block"
-			
-		}
-		function login(){
-			document.getElementById('login').style.display="block"
-		}
-	</script>
+	</div>
 
+	<div id="signup-login">
     <form action="#">
 			<input type="button" class="btn-info" value="Signup" onclick="signup()">
 			<div id="signup" style="display:none">
@@ -52,7 +47,7 @@
                         </div>
 
                         <div class="field button-field" >
-                            <button>Signup</button>
+                            <button onclick="open_emoter()">Done</button>
                         </div>
 			</div>
 
@@ -75,12 +70,13 @@
 			</div>
 
 			<div class="field button-field">
-				<button>Login</button>
+				<button onclick="open_emoter()">Done</button>
 			</div>
 		</div>
 	</form>
 
-			
+	</div>
+
 
 
     
